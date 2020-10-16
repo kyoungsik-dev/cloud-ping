@@ -1,0 +1,40 @@
+code,name,endpoint
+centralus,United States (Central US),https://astcentralus.blob.core.windows.net/public/callback.js
+eastus2,United States (East US 2),https://asteastus2.blob.core.windows.net/public/callback.js
+eastus,United States (East US),https://asteastus.blob.core.windows.net/public/callback.js
+northcentralus,United States (North Central US),https://astnorthcentralus.blob.core.windows.net/public/callback.js
+southcentralus,United States (South Central US),https://astsouthcentralus.blob.core.windows.net/public/callback.js
+westus2,United States (West US 2),https://astwestus2.blob.core.windows.net/public/callback.js
+westcentralus,United States (West Central US),https://astwestcentralus.blob.core.windows.net/public/callback.js
+westus,United States (West US),https://astwestus.blob.core.windows.net/public/callback.js
+canadacentral,Canada (Canada Central),https://astcanadacentral.blob.core.windows.net/public/callback.js
+canadaeast,Canada (Canada East),https://astcanadaeast.blob.core.windows.net/public/callback.js
+brazilsouth,Brazil (Brazil South),https://astbrazilsouth.blob.core.windows.net/public/callback.js
+northeurope,Europe (North Europe),https://astnortheurope.blob.core.windows.net/public/callback.js
+westeurope,Europe (West Europe),https://astwesteurope.blob.core.windows.net/public/callback.js
+francecentral,France (France Central),https://astfrancecentral.blob.core.windows.net/public/callback.js
+uksouth,United Kingdom (UK South),https://astuksouth.blob.core.windows.net/public/callback.js
+ukwest,United Kingdom (UK West),https://astukwest.blob.core.windows.net/public/callback.js
+germanynorth,Germany (Germany North),https://astgermanynorth.blob.core.windows.net/public/callback.js
+germanywestcentral,Germany (Germany West Central),https://astgermanywestcentral.blob.core.windows.net/public/callback.js
+switzerlandnorth,Switzerland (Switzerland North),https://astswitzerlandnorth.blob.core.windows.net/public/callback.js
+switzerlandwest,Switzerland (Switzerland West),https://astswitzerlandwest.blob.core.windows.net/public/callback.js
+norwaywest,Norway (Norway West),https://astnorwaywest.blob.core.windows.net/public/callback.js
+norwayeast,Norway (Norway East),https://astnorwayeast.blob.core.windows.net/public/callback.js
+eastasia,Asia Pacific (East Asia),https://asteastasia.blob.core.windows.net/public/callback.js
+southeastasia,Asia Pacific (Southeast Asia),https://astsoutheastasia.blob.core.windows.net/public/callback.js
+australiacentral,Australia (Australia Central),https://astaustraliacentral.blob.core.windows.net/public/callback.js
+australiacentral2,Australia (Australia Central 2),https://astaustraliacentral2.blob.core.windows.net/public/callback.js
+australiaeast,Australia (Australia East),https://astaustraliaeast.blob.core.windows.net/public/callback.js
+australiasoutheast,Australia (Australia Southeast),https://astaustraliasoutheast.blob.core.windows.net/public/callback.js
+centralindia,India (Central India),https://astcentralindia.blob.core.windows.net/public/callback.js
+southindia,India (South India),https://astsouthindia.blob.core.windows.net/public/callback.js
+westindia,India (West India),https://astwestindia.blob.core.windows.net/public/callback.js
+japaneast,Japan (Japan East),https://astjapaneast.blob.core.windows.net/public/callback.js
+japanwest,Japan (Japan West),https://astjapanwest.blob.core.windows.net/public/callback.js
+koreacentral,Korea (Korea Central),https://astkoreacentral.blob.core.windows.net/public/callback.js
+koreasouth,Korea (Korea South),https://astkoreasouth.blob.core.windows.net/public/callback.js
+southafricanorth,Africa (South Africa North),https://astsouthafricanorth.blob.core.windows.net/public/callback.js
+southafricawest,Africa (South Africa West),https://astsouthafricawest.blob.core.windows.net/public/callback.js
+uaecentral,United Arab Emirates (UAE Central),https://astuaecentral.blob.core.windows.net/public/callback.js
+uaenorth,United Arab Emirates (UAE North),https://astuaenorth.blob.core.windows.net/public/callback.js

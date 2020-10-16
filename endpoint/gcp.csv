@@ -1,0 +1,26 @@
+code,name,endpoint
+asia-east1,Taiwan,http://104.155.201.52/ping
+asia-east2,Hong Kong,http://35.220.162.209/ping
+asia-northeast1,Tokyo,http://104.198.86.148/ping
+asia-northeast2,Osaka,http://34.97.196.51/ping
+asia-northeast3,Seoul,http://34.64.138.27/ping
+asia-south1,Mumbai,http://35.200.186.152/ping
+asia-southeast1,Singapore,http://35.185.179.198/ping
+asia-southeast2,Jakarta,http://34.101.169.35/ping
+australia-southeast1,Sydney,http://35.189.6.113/ping
+europe-north1,Hamina, Finland,http://35.228.170.201/ping
+europe-west1,Belgium,http://104.199.82.109/ping
+europe-west2,London, UK,http://35.189.67.146/ping
+europe-west3,Frankfurt, Germany,http://35.198.78.172/ping
+europe-west4,Netherlands,http://35.204.93.82/ping
+europe-west6,Zurich, Switzerland,http://34.65.3.254/ping
+global,Global HTTP Load Balancer,http://35.186.221.153/ping
+northamerica-northeast1,Montreal, Canada,http://35.203.57.164/ping
+southamerica-east1,São Paulo,http://35.198.10.68/ping
+us-central1,Iowa, USA,http://104.197.165.8/ping
+us-east1,South Carolina, USA,http://104.196.161.21/ping
+us-east4,Northern Virginia, USA,http://35.186.168.152/ping
+us-west1,Oregon, USA,http://104.199.116.74/ping
+us-west2,Los Angeles, USA,http://35.236.45.25/ping
+us-west3,Salt Lake City, USA,http://34.106.137.137/ping
+us-west4,Las Vegas, USA,http://34.125.96.237/ping

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Latency Testing of Cloud Regions Worldwide">
+  <meta property="og:site_name" content="cloud-ping">
+  <meta property="og:description"
+    content="Measure the network latency from your browser to cloud service data centers around the world, including AWS, Azure, and GCP.">
+  <meta property="og:image" content="static/og-image.png">
+  <meta name="description"
+    content="Measure the network latency from your browser to cloud service data centers around the world, including AWS, Azure, and GCP.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css" type="text/css">
+  <title>cloud-ping</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="left">cloud-ping</div>
+    <div class="center">
+      <div class="btn">AWS</div>
+      <div class="btn">Azure</div>
+      <div class="btn">GCP</div>
+    </div>
+    <div class="right">hello world</div>
+  </div>
+  <div id=page>
+    <div id=content>
+      <div id="aws">
+        <% for (let i=0; i<aws.length; i++) { %>
+          <div class="region">
+            <div class="code"><%= aws[i].code %></div>
+            <div class="name"><%= aws[i].name %></div>
+            <div class="endpoint"><%= aws[i].endpoint %></div>
+          </div>
+        <% } %>
+      </div>
+
+        <!-- <tr>
+          <td>US-East (Virginia)</td>
+          <td class='latency' id='us-east-1' endpoint='https://dynamodb.us-east-1.amazonaws.com/'>&nbsp;</td>
+        </tr>
+        <tr>
+          <td id='imageCell'></td>
+          <td><input type='submit' id='pingbutton' value="     HTTP Ping     "></td>
+        </tr> -->
+
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="ping.js"></script>
+    </div>
+    <div id="footer">
+      Kyoungsik-dev
+    </div>
+</body>

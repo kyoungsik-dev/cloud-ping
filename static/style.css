@@ -1,0 +1,80 @@
+body {
+  background-color: #191919;
+  color: #fff;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav {
+  position: fixed;
+  background-color: #131313;
+  width: 100%;
+  line-height: 25px;
+  display: flex;
+  height: 65px;
+  font-weight: 700;
+}
+.nav > .left {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 40px;
+  font-size: 25px;
+  flex: 0 0 200px;
+}
+.nav > .center {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.nav > .center > .btn {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav > .right {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 40px;  
+  font-size: 20px;
+  flex: 0 0 200px;
+  text-align: right;
+}
+
+.region {
+  display: flex;
+  padding: 15px;
+}
+.region > .code {
+  flex: 100px;
+}
+.region > .name {
+  flex: 100px;
+}
+.region > .endpoint {
+  flex: 100px;
+}
+
+#page {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 2px 30px 2px;
+  text-align: left;
+  background-image: url(/static/world.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 300px;
+}
+#content {
+  width: 750px;
+  margin: auto;
+  padding: 0;
+}
+
+#footer {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
