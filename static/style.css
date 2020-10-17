@@ -1,9 +1,26 @@
-body {
+/* Dark & Light Mode */
+body.theme-dark {
   background-color: #191919;
   color: #fff;
+}
+body.theme-light {
+  color: #000;
+}
+body.theme-light .nav {
+  color: #fff;
+}
+body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+/* End */
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav {
   position: fixed;
   background-color: #131313;
@@ -12,6 +29,7 @@ body {
   display: flex;
   height: 65px;
   font-weight: 700;
+  top: 0;
 }
 .nav > .left {
   margin-top: auto;
@@ -32,6 +50,9 @@ body {
   font-size: 20px;
   text-align: center;
 }
+.nav > .center > .btn.selected {
+  color: burlywood;
+}
 .nav > .right {
   margin-top: auto;
   margin-bottom: auto;
@@ -51,15 +72,22 @@ body {
 .region > .name {
   flex: 100px;
 }
-.region > .endpoint {
+.region > .status {
   flex: 100px;
 }
 
-#page {
+#ping-page {
   width: 1200px;
-  margin: 0 auto;
-  padding: 25px 2px 30px 2px;
+  margin: 65px auto 0 auto;
+  padding: 30px 0 0 0;
   text-align: left;
+  background-image: url(/static/world.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 300px;
+}
+#index-page {
+  height: 100vh;
   background-image: url(/static/world.png);
   background-size: contain;
   background-repeat: no-repeat;

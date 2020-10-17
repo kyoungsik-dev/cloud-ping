@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Latency Testing of Cloud Regions Worldwide">
+  <meta property="og:site_name" content="cloud-ping">
+  <meta property="og:description"
+      content="Measure the network latency from your browser to cloud service data centers around the world, including AWS, Azure, and GCP.">
+  <meta property="og:image" content="static/og-image.png">
+  <meta name="description"
+      content="Measure the network latency from your browser to cloud service data centers around the world, including AWS, Azure, and GCP.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css" type="text/css">
+  <title>cloud-ping</title>
+</head>
+<body class="theme-<%= theme %>">
+  <div class="nav">
+    <div class="left"><a href="/">cloud-ping</a></div>
+    <div class="center">
+      <div class="btn <%= csp === 'aws' ? 'selected' : '' %>"><a href="/aws">AWS</a></div>
+      <div class="btn <%= csp === 'azure' ? 'selected' : '' %>"><a href="/azure">Azure</a></div>
+      <div class="btn <%= csp === 'gcp' ? 'selected' : '' %>"><a href="/gcp">GCP</a></div>
+    </div>
+    <div class="right">hello world</div>
+  </div>

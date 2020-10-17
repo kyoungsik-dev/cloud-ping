@@ -21,14 +21,22 @@ app.set('view engine', 'ejs');
 app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => {
-  const awsPath = path.join(__dirname, 'endpoint', 'aws.csv');
-  const azurePath = path.join(__dirname, 'endpoint', 'azure.csv');
-  const gcpPath = path.join(__dirname, 'endpoint', 'gcp.csv');
-
-  const aws = parseCSV(fs.readFileSync(awsPath, {encoding: 'utf8'}));
-  const azure = parseCSV(fs.readFileSync(azurePath, {encoding: 'utf8'}));
-  const gcp = parseCSV(fs.readFileSync(gcpPath, {encoding: 'utf8'}));
-  res.render('index', { aws });
+  res.render('index', { theme: 'light', csp: 'none'});
+});
+app.get('/aws', (req, res) => {
+  const filepath = path.join(__dirname, 'endpoint', 'aws.csv');
+  const regions = parseCSV(fs.readFileSync(filepath, {encoding: 'utf8'}));
+  res.render('ping', { theme: 'dark', csp: 'aws', regions });
+});
+app.get('/azure', (req, res) => {
+  const filepath = path.join(__dirname, 'endpoint', 'azure.csv');
+  const regions = parseCSV(fs.readFileSync(filepath, {encoding: 'utf8'}));
+  res.render('ping', { theme: 'dark', csp: 'azure', regions });
+});
+app.get('/gcp', (req, res) => {
+  const filepath = path.join(__dirname, 'endpoint', 'gcp.csv');
+  const regions = parseCSV(fs.readFileSync(filepath, {encoding: 'utf8'}));
+  res.render('ping', { theme: 'dark', csp: 'gcp', regions });
 });
 
 const port = 3000;

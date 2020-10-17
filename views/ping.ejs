@@ -1,0 +1,29 @@
+<%- include('./header.ejs'); %>
+<div id=ping-page>
+  <div id=content>
+    <div id="aws">
+      <% for (let i=0; i<regions.length; i++) { %>
+        <div class="region" data-code="<%= regions[i].code %>" data-endpoint="<%= regions[i].endpoint %>">
+          <div class="code"><%= regions[i].code %></div>
+          <div class="name"><%= regions[i].name %></div>
+          <div class="status"></div>
+        </div>
+      <% } %>
+    </div>
+
+      <!-- <tr>
+        <td>US-East (Virginia)</td>
+        <td class='latency' id='us-east-1' endpoint='https://dynamodb.us-east-1.amazonaws.com/'>&nbsp;</td>
+      </tr>
+      <tr>
+        <td id='imageCell'></td>
+        <td><input type='submit' id='pingbutton' value="     HTTP Ping     "></td>
+      </tr> -->
+
+    
+  </div>
+  <div id="footer">
+    Kyoungsik-dev
+  </div>
+</div>
+<%- include('./footer.ejs'); %>
