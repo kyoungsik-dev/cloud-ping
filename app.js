@@ -7,6 +7,7 @@ const parseCSV = (data) => {
   data = data.split('\n');
   const columns = data[0].split(',');
   data.shift();
+  data.pop();
   return data.map(row => {
     row = row.split(',');
     const obj = {};

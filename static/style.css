@@ -4,6 +4,7 @@ body.theme-dark {
   color: #fff;
 }
 body.theme-light {
+  background-color: #0bcbff;
   color: #000;
 }
 body.theme-light .nav {
@@ -21,6 +22,38 @@ a {
   text-decoration: none;
 }
 
+.button-area {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  border: 3px solid #eee;
+  border-radius: 10px;
+  color: #eee;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+}
+.button:hover {
+  border: 3px solid #eee;
+  background-color: #eee;
+  color: #131313;
+}
+.button:active {
+  box-shadow: 0 0 0 0.2rem #aaa;
+}
+.button.disabled {
+  cursor: progress !important;
+  border: 3px solid #555 !important;
+  color: #555 !important;
+  background-color: transparent !important;
+}
 .nav {
   position: fixed;
   background-color: #131313;
@@ -57,28 +90,33 @@ a {
   margin-top: auto;
   margin-bottom: auto;
   padding-right: 40px;  
-  font-size: 20px;
   flex: 0 0 200px;
   text-align: right;
+  height: 28px;
+  color: #131313;
 }
-
+.table {
+  margin-bottom: 50px;
+}
 .region {
   display: flex;
   padding: 15px;
 }
 .region > .code {
-  flex: 100px;
+  flex: 0 1 250px;
+  font-weight: 600;
 }
 .region > .name {
-  flex: 100px;
+  flex: 1 1 300px;
 }
 .region > .status {
-  flex: 100px;
+  flex: 0 1 150px;
+  font-weight: 600;
 }
 
 #ping-page {
-  width: 1200px;
-  margin: 65px auto 0 auto;
+  width: 100%;
+  margin-top: 65px;
   padding: 30px 0 0 0;
   text-align: left;
   background-image: url(/static/world.png);
@@ -87,21 +125,29 @@ a {
   background-position-y: 300px;
 }
 #index-page {
-  height: 100vh;
-  background-image: url(/static/world.png);
+  background-image: url(/static/2020.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: 300px;
+  background-position: center;
 }
-#content {
+.content {
   width: 750px;
   margin: auto;
   padding: 0;
 }
+#index-page .content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#index-page .content .wrapper {
+  text-align: center;
+}
 
 #footer {
   border-top: 1px solid #d3d3d3;
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
